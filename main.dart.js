@@ -107098,7 +107098,7 @@ k=e.e
 if(k>=2){j=n&&e.c==="PXL Esports"?B.d2:c
 i=h.w?g:new A.aHo(h,a0,e)
 l.push(A.bU(A.b03(j,"fab-check-pxl",A.a9("PXL",g,g,g,g,A.aC(g,g,s,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),i),56,56))}l.push(B.b7)
-if(k>=1){n=n&&e.c==="Rbgh"?B.d2:c
+if(k>=1){n=n&&e.c==="RBGH"?B.d2:c
 k=h.w?g:new A.aHp(h,a0,e)
 l.push(A.bU(A.b03(n,"fab-check-rbgh",A.a9("RBGH",g,g,g,g,A.aC(g,g,s,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),k),56,56))}return A.hH(new A.j0(b,B.co,g),a,p,g,new A.ax(B.K5,A.bm(A.b([m,B.cJ,A.bn(l,B.o,B.dD,B.p,g)],o),B.eh,B.m,B.a_),g))},
 iI(a,b,c){return this.avp(a,b,c)},
@@ -107213,7 +107213,7 @@ if(q==null)q=B.k
 b=b.r
 p=b==null?d:b.b
 if(p==null)p=B.k
-o=this.UY("Rbgh")
+o=this.UY("RBGH")
 n=this.UY("PXL Esports")
 m=A.c_(a0,!1)
 A.bI(a0,B.B,t.v).toString
@@ -107350,7 +107350,7 @@ if(!s.w)s.Zl(this.b,this.c.b,"PXL Esports")},
 $S:0}
 A.aHp.prototype={
 $0(){var s=this.a
-if(!s.w)s.Zl(this.b,this.c.b,"Rbgh")},
+if(!s.w)s.Zl(this.b,this.c.b,"RBGH")},
 $S:0}
 A.aHd.prototype={
 $0(){this.a.w=!0},
