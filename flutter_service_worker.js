@@ -35,7 +35,7 @@ const RESOURCES = {"canvaskit/skwasm.js": "694fda5704053957c2594de355805228",
 "assets/AssetManifest.bin.json": "99cced066860b43769202715f1272bef",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b89682a9e4402af142ce2b40cd2c98b0",
 "assets/AssetManifest.json": "ee964454f93953e504718cc3f40620eb",
-"version.json": "a7627b7f755d273681b0519d02cafc38",
+"version.json": "9fe0c10b6b6c17f3011146d1fea95a9e",
 "flutter.js": "f393d3c16b631f36852323de8e583132",
 "main.dart.js": "89fe22e31ad153c0e7ec354a100db71c",
 "firebase-messaging-sw.js": "d11bd10961c5a6fffe968d8533fd90c1",
@@ -48,7 +48,7 @@ const RESOURCES = {"canvaskit/skwasm.js": "694fda5704053957c2594de355805228",
 "icons/Icon-maskable-192.png": "da3a393e1c3c8ace9202e53822af578d",
 "manifest.json": "16796f2cec421f5e50f48fb01663bad3",
 "favicon.png": "7f75a2244b29632fd384b215579c878a",
-"flutter_bootstrap.js": "a8bb9a4653851bd0746841f6aadea385"};
+"flutter_bootstrap.js": "2f3474adfc082570105ce941dc966370"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
