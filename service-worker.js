@@ -13,18 +13,6 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(self.clients.claim());
 });
 
-// Listen for background messages from Firebase
-messaging.onBackgroundMessage((payload) => {
-  console.log("[service-worker.js] Received background message ", payload);
-  const notificationTitle = payload.notification.title;
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: payload.notification.icon,
-  };
-
-  self.registration.showNotification(notificationTitle, notificationOptions);
-});
-
 // Listen for messages from the app (if needed)
 self.addEventListener("message", (event) => {
   if (event.data === "SKIP_WAITING") {
