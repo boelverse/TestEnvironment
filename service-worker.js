@@ -46,3 +46,11 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
+
+navigator.serviceWorker.register('/service-worker.js')
+  .then((registration) => {
+    console.log('Custom Service Worker registered with scope:', registration.scope);
+  })
+  .catch((error) => {
+    console.error('Custom Service Worker registration failed:', error);
+  });
