@@ -22,21 +22,7 @@ messaging.onBackgroundMessage((payload) => {
     icon: payload.notification.icon,
   };
 
-  // Check if the exact same notification already exists
-  self.registration.getNotifications({ tag: notificationTitle }).then((notifications) => {
-    const exists = notifications.some(
-      (notification) =>
-        notification.title === notificationTitle &&
-        notification.body === notificationOptions.body &&
-        notification.icon === notificationOptions.icon
-    );
-
-    if (!exists) {
-      self.registration.showNotification(notificationTitle, notificationOptions);
-    } else {
-      console.log("Notification already exists, skipping.");
-    }
-  });
+  self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
 // Listen for messages from the app (if needed)
@@ -46,11 +32,3 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
-
-navigator.serviceWorker.register('/service-worker.js')
-  .then((registration) => {
-    console.log('Custom Service Worker registered with scope:', registration.scope);
-  })
-  .catch((error) => {
-    console.error('Custom Service Worker registration failed:', error);
-  });
