@@ -1,5 +1,5 @@
 importScripts("https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js");
-importScripts("https://www.gstatic.com/firebasejs/9.10.0/firebase-messaging-compat.js");
+importScripts("./firebase-messaging-custom.js");
 
 const messaging = firebase.messaging();
 
@@ -16,40 +16,13 @@ self.addEventListener("activate", (event) => {
 // Listen for background messages from Firebase
 messaging.onBackgroundMessage((payload) => {
   console.log("[service-worker.js] Received background message ", payload);
+  const notificationTitle = payload.notification.title;
+  const notificationOptions = {
+    body: payload.notification.body,
+    icon: payload.notification.icon,
+  };
 
-  // Custom implementation for showing notifications
-  if (payload.notification) {
-    const notificationTitle = payload.notification.title || "Default Title";
-    const notificationOptions = {
-      body: payload.notification.body || "Default Body",
-      icon: payload.notification.icon || "/default-icon.png",
-      data: payload.data || {}, // Pass additional data if needed
-    };
-
-    self.registration.showNotification(notificationTitle, notificationOptions);
-  }
-});
-
-// Handle notification click events
-self.addEventListener("notificationclick", (event) => {
-  console.log("[service-worker.js] Notification click received.", event);
-  event.notification.close();
-
-  // Custom logic for handling notification clicks
-  if (event.notification.data && event.notification.data.url) {
-    event.waitUntil(
-      clients.matchAll({ type: "window", includeUncontrolled: true }).then((clientList) => {
-        for (const client of clientList) {
-          if (client.url === event.notification.data.url && "focus" in client) {
-            return client.focus();
-          }
-        }
-        if (clients.openWindow) {
-          return clients.openWindow(event.notification.data.url);
-        }
-      })
-    );
-  }
+  self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
 // Listen for messages from the app (if needed)
