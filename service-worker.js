@@ -13,6 +13,7 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(self.clients.claim());
 });
 
+
 // Listen for messages from the app (if needed)
 self.addEventListener("message", (event) => {
   if (event.data === "SKIP_WAITING") {
@@ -20,23 +21,3 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
-
-// Unregister previous service workers and register a new one
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', async function () {
-    try {
-      // Get all service worker registrations
-      const registrations = await navigator.serviceWorker.getRegistrations();
-
-      // Unregister each service worker
-      for (const registration of registrations) {
-        console.log('Unregistering service worker:', registration);
-        await registration.unregister();
-      }
-
-      // Register the new service worker
-    } catch (error) {
-      console.error('Error during service worker registration:', error);
-    }
-  });
-}
