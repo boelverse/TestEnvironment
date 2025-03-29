@@ -35,9 +35,6 @@ if ('serviceWorker' in navigator) {
       }
 
       // Register the new service worker
-      console.log('Registering new service worker...');
-      await navigator.serviceWorker.register('/firebase-messaging-sw.js');
-      console.log('New service worker registered successfully.');
     } catch (error) {
       console.error('Error during service worker registration:', error);
     }
