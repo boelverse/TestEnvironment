@@ -20,3 +20,26 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
+
+// Unregister previous service workers and register a new one
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', async function () {
+    try {
+      // Get all service worker registrations
+      const registrations = await navigator.serviceWorker.getRegistrations();
+
+      // Unregister each service worker
+      for (const registration of registrations) {
+        console.log('Unregistering service worker:', registration);
+        await registration.unregister();
+      }
+
+      // Register the new service worker
+      console.log('Registering new service worker...');
+      await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+      console.log('New service worker registered successfully.');
+    } catch (error) {
+      console.error('Error during service worker registration:', error);
+    }
+  });
+}
