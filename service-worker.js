@@ -15,25 +15,15 @@ self.addEventListener("activate", (event) => {
 
 // Listen for background messages from Firebase
 messaging.onBackgroundMessage((payload) => {
-  console.log("[Service Worker] Background message ontvangen:", payload);
-  
-  if (!payload.notification) return;
+  console.log("[service-worker.js] Received background message ", payload);
+  const notificationTitle = payload.notification.title;
+  const notificationOptions = {
+    body: payload.notification.body,
+    icon: payload.notification.icon,
+  };
 
-  const { title, body, icon } = payload.notification;
-
-  // Controleer of de notificatie al bestaat
-  self.registration.getNotifications().then((existingNotifications) => {
-    const alreadyExists = existingNotifications.some((n) => n.title === title && n.body === body);
-    
-    if (!alreadyExists) {
-      self.registration.showNotification(title, {
-        body,
-        icon,
-      });
-    }
-  });
+  self.registration.showNotification(notificationTitle, notificationOptions);
 });
-
 
 // Listen for messages from the app (if needed)
 self.addEventListener("message", (event) => {
