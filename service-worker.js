@@ -1,5 +1,6 @@
-importScripts("https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js");
-importScripts("./firebase-messaging-custom.js");
+importScripts("https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js");
+importScripts("https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging-compat.js");
+
 
 const messaging = firebase.messaging();
 
@@ -15,15 +16,25 @@ self.addEventListener("activate", (event) => {
 
 // Listen for background messages from Firebase
 messaging.onBackgroundMessage((payload) => {
-  console.log("[service-worker.js] Received background message ", payload);
-  const notificationTitle = payload.notification.title;
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: payload.notification.icon,
-  };
+  console.log("[Service Worker] Background message ontvangen:", payload);
+  
+  if (!payload.notification) return;
 
-  self.registration.showNotification(notificationTitle, notificationOptions);
+  const { title, body, icon } = payload.notification;
+
+  // Controleer of de notificatie al bestaat
+  self.registration.getNotifications().then((existingNotifications) => {
+    const alreadyExists = existingNotifications.some((n) => n.title === title && n.body === body);
+    
+    if (!alreadyExists) {
+      self.registration.showNotification(title, {
+        body,
+        icon,
+      });
+    }
+  });
 });
+
 
 // Listen for messages from the app (if needed)
 self.addEventListener("message", (event) => {
