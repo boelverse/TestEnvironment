@@ -53522,8 +53522,7 @@ case 1:r.e=!1
 s=$.uW
 s.n(0,a,new A.dH(null,new A.aka(r,a),t.J6))
 break}},
-ghq(){var s=this.r
-return s==null?this.r=A.bbq(A.Rc(this.gh4().a.a)):s},
+ghq(){return this.r=A.bbq(A.Rc(this.gh4().a.a))},
 yP(a){var s=$.at,r=$.Rv()
 s=new A.V0(new A.bA(new A.ai(s,t.c),t.R),a)
 $.c8().n(0,s,r)
@@ -54061,7 +54060,7 @@ while(true)switch(s){case 0:l=t.lZ.a(self)
 if(l.firebase_core!=null){s=1
 break}o=A.al(l.flutterfire_web_sdk_version)
 if(o==null)o=null
-n=o==null?"11.3.1":o
+n=o==null?"11.5.0":o
 m=p.gaqb()
 l=$.abo().gaY(0)
 s=3
