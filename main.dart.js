@@ -31751,11 +31751,9 @@ this.b=b},
 aE5:function aE5(a){this.a=a},
 aE6:function aE6(a){this.a=a},
 aE9:function aE9(){},
-aEa:function aEa(a,b,c,d){var _=this
-_.a=a
-_.b=b
-_.c=c
-_.d=d},
+aEa:function aEa(a,b,c){this.a=a
+this.b=b
+this.c=c},
 v4:function v4(a){this.a=a},
 MY:function MY(a,b){var _=this
 _.d=a
@@ -110871,7 +110869,7 @@ j=A.a7("Send Notification",o,o,o,o,l==null?o:l.a2T(B.E),o,o,o)
 r=A.dY(n.CW,o,o)
 q=A.fu(o,!1,this.Q,A.j4(o,new A.dO(4,A.aR(8),B.bx),o,o,o,o,o,o,!0,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,k,"Message",o,o,o,o,o,o,o,o,o,o,o,o,o),!1,o,o,o,1,!1,o,o,o,o,o,!1,o,k,B.R,o,new A.aE9())
 p=A.dM(o,o,i,o,o,o,4,o,o,o,o,o,B.fG,o,new A.bg(A.aR(12),B.i),o,o,o,o)
-return A.ED(new A.at(B.aP,A.r9(o,A.be(A.b([j,B.a7,r,B.a7,q,B.a7,A.bS(A.ea(!1,A.a7("Send",o,o,o,o,A.ap(o,o,s,o,o,o,o,o,o,o,o,18,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),o,o,B.ac,o,o,o,o,new A.aEa(this,b,c,a),o,p),o,1/0)],t.p),B.ae,B.l,B.o),this.z),o),o,n.at,2,B.KU,new A.bg(m,B.i))}}
+return A.ED(new A.at(B.aP,A.r9(o,A.be(A.b([j,B.a7,r,B.a7,q,B.a7,A.bS(A.ea(!1,A.a7("Send",o,o,o,o,A.ap(o,o,s,o,o,o,o,o,o,o,o,18,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),o,o,o),o,o,B.ac,o,o,o,o,new A.aEa(this,c,a),o,p),o,1/0)],t.p),B.ae,B.l,B.o),this.z),o),o,n.at,2,B.KU,new A.bg(m,B.i))}}
 A.aE4.prototype={
 $0(){A.b0(this.b.a.a.h(0,"value"))},
 $S:0}
@@ -110938,8 +110936,8 @@ s=o.z.gO().lC()?2:3
 break
 case 2:p=o.Q
 s=4
-return A.f(o.u1(q.b+" sent you a notification",p.a.a,o.a.d,q.c),$async$$0)
-case 4:A.dI(q.d,"Notification sent successfully!")
+return A.f(o.u1("RBGH Notification",p.a.a,o.a.d,q.b),$async$$0)
+case 4:A.dI(q.c,"Notification sent successfully!")
 p.k0(0,B.hx)
 case 3:return A.o(null,r)}})
 return A.p($async$$0,r)},
