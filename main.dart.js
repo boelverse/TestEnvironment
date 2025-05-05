@@ -32187,13 +32187,12 @@ _.d=d
 _.e=e},
 aTP:function aTP(){},
 aTQ:function aTQ(){},
-aTR:function aTR(a,b,c,d,e,f){var _=this
+aTR:function aTR(a,b,c,d,e){var _=this
 _.a=a
 _.b=b
 _.c=c
 _.d=d
-_.e=e
-_.f=f},
+_.e=e},
 aTK:function aTK(){},
 aTL:function aTL(a,b,c,d,e){var _=this
 _.a=a
@@ -112533,7 +112532,7 @@ if(s==null||!t.f.b(s))return A.cp(A.U("No computers found.",p,p,p,p,A.aa(p,p,q.b
 o=J.kv(s)
 r=o.c_(o,new A.aTP(),t.f).cz(0)
 B.b.dv(r,new A.aTQ())
-return A.rw(new A.aTR(q.a,r,q.c,q.b,q.d,q.e),r.length,p,p,!1)}else if(b.c!=null)return A.cp(A.U("Error loading data",p,p,p,p,A.aa(p,p,q.b,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p,p),p,p)
+return A.rw(new A.aTR(q.a,r,q.c,q.d,q.e),r.length,p,p,!1)}else if(b.c!=null)return A.cp(A.U("Error loading data",p,p,p,p,A.aa(p,p,q.b,p,p,p,p,p,p,p,p,16,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p,p),p,p)
 else return B.bB},
 $S:791}
 A.aTP.prototype={
@@ -112548,40 +112547,39 @@ $2(a,b){var s="deviceId"
 return J.ku(J.Z(a,s),J.Z(b,s))},
 $S:793}
 A.aTR.prototype={
-$2(a4,a5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null,a1=a.b[a5],a2=J.Q(a1),a3=a2.h(a1,"deviceId")
-if(a3==null)a3="Unknown"
-s=a2.h(a1,"activeWindow")
+$2(a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=null,a0=b.b[a4],a1=J.Q(a0),a2=a1.h(a0,"deviceId")
+if(a2==null)a2="Unknown"
+s=a1.h(a0,"activeWindow")
 if(s==null)s="Unknown"
-r=a2.h(a1,"uptimeToday")
+r=a1.h(a0,"uptimeToday")
 if(r==null)r=0
-q=a2.h(a1,"timestamp")
+q=a1.h(a0,"timestamp")
 if(q==null)q=0
-p=a2.h(a1,"isPcHardLocked")
+p=a1.h(a0,"isPcHardLocked")
 if(p==null)p=!1
-o=a2.h(a1,"usb_devices")
+o=a1.h(a0,"usb_devices")
 if(o==null)o=A.a([],t.s)
-n=a2.h(a1,"enabled")
+n=a1.h(a0,"enabled")
 if(n==null)n=!0
 m=B.d.eV(r/3600)
 l=B.d.eV(B.d.ae(r,3600)/60)
-a2=A.iW(B.d.aD(q*1000),0,!1)
-k=B.e.aQ(new A.an(Date.now(),0,!1).fn(new A.an(a2,0,!1)).a,6e7)>=5
-a2=a.a
-j=a2.a8R(o)
+a1=A.iW(B.d.aD(q*1000),0,!1)
+k=B.e.aQ(new A.an(Date.now(),0,!1).fn(new A.an(a1,0,!1)).a,6e7)>=5
+a1=b.a
+j=a1.a8R(o)
 B.b.en(j,new A.aTK())
-i=a.c
+i=b.c
 h=A.R(30,33,150,243)
 g=k?B.iZ:B.lU
-f=a.d
+f=i.k4.f
 e=t.p
-g=A.b3(A.a([A.aQ(g,k?B.bb:B.cx,a0,a0),B.an,A.U("PC: "+a3,a0,a0,a0,a0,A.aa(a0,a0,f,a0,a0,a0,a0,a0,a0,a0,a0,16,a0,a0,a0,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],e),B.m,B.k,B.o,a0)
+g=A.b3(A.a([A.aQ(g,k?B.bb:B.cx,a,a),B.an,A.U("PC: "+a2,a,a,a,a,A.aa(a,a,f,a,a,a,a,a,a,a,a,16,a,a,a,a,a,!0,a,a,a,a,a,a,a,a),a,a,a)],e),B.m,B.k,B.o,a)
 d=p?B.qR:B.qS
-c=i.k4.f
-d=A.a([A.cu(a0,A.aQ(d,p?B.bb:B.cx,a0,a0),a0,new A.aTL(a2,a4,a3,p,n),a0,a0,a0),A.cu(a0,A.aQ(B.MC,c,a0,a0),a0,new A.aTM(a2,a4,a3,n),a0,a0,a0)],e)
-if(a.e===5){b=n?B.MN:B.MM
-d.push(A.cu(a0,A.aQ(b,n?B.cx:B.bb,a0,a0),a0,new A.aTN(a2,a4,a3,n),a0,a0,a0))}a2=a.f
-b=A.a1(j).i("a2<1,wG>")
-return A.ds(a0,a0,a0,a0,A.oo(A.fs(!1,a0,!0,new A.as(B.af,A.b0(A.a([A.b3(A.a([g,A.b3(d,B.m,B.k,B.o,a0)],e),B.m,B.dX,B.o,a0),A.e1(a2,a0,a0),B.aQ,A.b3(A.a([A.aQ(B.Ml,c,a0,a0),B.an,A.cJ(A.U("Active Window: "+s,a0,B.au,a0,!0,A.aa(a0,a0,f,a0,a0,a0,a0,a0,a0,a0,a0,16,a0,a0,a0,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0),1)],e),B.m,B.k,B.o,a0),B.aQ,A.b3(A.a([A.aQ(B.MK,c,a0,a0),B.an,A.U("Uptime: "+m+"h "+l+"m",a0,a0,a0,a0,A.aa(a0,a0,f,a0,a0,a0,a0,a0,a0,a0,a0,16,a0,a0,a0,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0,a0),a0,a0,a0)],e),B.m,B.k,B.o,a0),B.aQ,A.e1(a2,a0,a0),B.aQ,A.b0(A.T(new A.a2(j,new A.aTO(f),b),!0,b.i("ac.E")),B.a4,B.k,B.o)],e),B.a4,B.k,B.o),a0),a0,!0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,h,a0,a0),B.z,i.fr,a0,a0,a0),B.m3,a0)},
+d=A.a([A.cu(a,A.aQ(d,p?B.bb:B.cx,a,a),a,new A.aTL(a1,a3,a2,p,n),a,a,a),A.cu(a,A.aQ(B.MC,f,a,a),a,new A.aTM(a1,a3,a2,n),a,a,a)],e)
+if(b.d===5){c=n?B.MN:B.MM
+d.push(A.cu(a,A.aQ(c,n?B.cx:B.bb,a,a),a,new A.aTN(a1,a3,a2,n),a,a,a))}a1=b.e
+c=A.a1(j).i("a2<1,wG>")
+return A.ds(a,a,a,a,A.oo(A.fs(!1,a,!0,new A.as(B.af,A.b0(A.a([A.b3(A.a([g,A.b3(d,B.m,B.k,B.o,a)],e),B.m,B.dX,B.o,a),A.e1(a1,a,a),B.aQ,A.b3(A.a([A.aQ(B.Ml,f,a,a),B.an,A.cJ(A.U("Active Window: "+s,a,B.au,a,!0,A.aa(a,a,f,a,a,a,a,a,a,a,a,16,a,a,a,a,a,!0,a,a,a,a,a,a,a,a),a,a,a),1)],e),B.m,B.k,B.o,a),B.aQ,A.b3(A.a([A.aQ(B.MK,f,a,a),B.an,A.U("Uptime: "+m+"h "+l+"m",a,a,a,a,A.aa(a,a,f,a,a,a,a,a,a,a,a,16,a,a,a,a,a,!0,a,a,a,a,a,a,a,a),a,a,a)],e),B.m,B.k,B.o,a),B.aQ,A.e1(a1,a,a),B.aQ,A.b0(A.T(new A.a2(j,new A.aTO(i),c),!0,c.i("ac.E")),B.a4,B.k,B.o)],e),B.a4,B.k,B.o),a),a,!0,a,a,a,a,a,a,a,a,a,a,a,a,a,h,a,a),B.z,i.fr,a,a,a),B.m3,a)},
 $S:288}
 A.aTK.prototype={
 $1(a){return J.Z(a,"isConnected")},
@@ -112600,7 +112598,7 @@ return s.a.aKs(s.b,s.c,s.d)},
 $S:0}
 A.aTO.prototype={
 $1(a){var s="isConnected",r=null,q=J.Q(a),p=q.h(a,s)?B.lU:B.iZ
-return A.b3(A.a([A.aQ(p,q.h(a,s)?B.cx:B.bb,r,r),B.an,A.U(q.h(a,"name"),r,r,r,r,A.aa(r,r,this.a,r,r,r,r,r,r,r,r,16,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r)],t.p),B.m,B.k,B.o,r)},
+return A.b3(A.a([A.aQ(p,q.h(a,s)?B.cx:B.bb,r,r),B.an,A.U(q.h(a,"name"),r,r,r,r,A.aa(r,r,this.a.k4.f,r,r,r,r,r,r,r,r,16,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r)],t.p),B.m,B.k,B.o,r)},
 $S:795}
 A.uw.prototype={
 S(){var s=$.am()
