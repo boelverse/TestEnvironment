@@ -114413,11 +114413,11 @@ return A.f(A.awk(),$async$CX)
 case 2:q.J(new p.aUN(q,b))
 return A.l(null,r)}})
 return A.m($async$CX,r)},
-F(a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a="Sync data with database/excel",a0=c.gbd().d1($.cM(),t.Y),a1=a0.c,a2=A.G(a4),a3=a2.R8.a
-if(a3==null)a3=B.h
-s=a2.at
-r=a2.CW
-q=a2.p2
+F(a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=c.gbd().d1($.cM(),t.Y),a0=a.c,a1=A.G(a3),a2=a1.R8.a
+if(a2==null)a2=B.h
+s=a1.at
+r=a1.CW
+q=a1.p2
 p=q.r
 o=p==null?b:p.b
 if(o==null)o=B.j
@@ -114427,8 +114427,8 @@ if(n==null)n=B.j
 q=q.Q
 m=q==null?b:q.b
 if(m==null)m=B.j
-q=a2.k1
-p=A.dI(B.u,!0,b,A.fo(b,a3,!0,b,0,A.U("Settings",b,b,b,b,A.aa(b,b,o,b,b,b,b,b,b,b,b,18,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)),B.n,b,1,b,q,b,b,b,B.aw)
+q=a1.k1
+p=A.dI(B.u,!0,b,A.fo(b,a2,!0,b,0,A.U("Settings",b,b,b,b,A.aa(b,b,o,b,b,b,b,b,b,b,b,18,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)),B.n,b,1,b,q,b,b,b,B.aw)
 l=t.p
 k=A.b1(A.a([B.an,A.U("General Settings",b,b,b,b,A.aa(b,b,n,b,b,b,b,b,b,b,b,14,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)],l),B.m,B.k,B.o,b)
 j=A.ad(12)
@@ -114438,19 +114438,19 @@ h=q>>>8&255
 q&=255
 g=t.V
 f=A.a([new A.bG(1,B.P,A.M(51,i,h,q),B.cA,12)],g)
-e=A.a([A.du(b,A.mx(A.aP(B.MY,n,b,b),"Access your account details"),new A.aV7(a4),b,B.a5P,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Ms,n,b,b),"Manage your preferences"),new A.aV8(a4),b,B.a61,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MZ,n,b,b),"Manage notification preferences"),new A.aV9(c,a4),b,B.a6a,b,A.aP(B.bw,n,b,b))],l)
-d=a0.y
-if(d>=1)B.b.L(e,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MF,n,b,b),"View and manage users."),new A.aVb(a4),b,B.a64,b,A.aP(B.bw,n,b,b))],l))
+e=A.a([A.du(b,A.mx(A.aP(B.MY,n,b,b),"Access your account details"),new A.aV7(a3),b,B.a5P,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Ms,n,b,b),"Manage your preferences"),new A.aV8(a3),b,B.a61,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MZ,n,b,b),"Manage notification preferences"),new A.aV9(c,a3),b,B.a6a,b,A.aP(B.bw,n,b,b))],l)
+d=a.y
+if(d>=1)B.b.L(e,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MF,n,b,b),"View and manage users."),new A.aVb(a3),b,B.a64,b,A.aP(B.bw,n,b,b))],l))
 j=A.bl(b,A.b0(e,B.m,B.k,B.o,B.q),B.n,b,b,new A.bo(s,b,b,j,f,b,B.C),b,b,b,B.aj,b,b,b)
 f=A.b1(A.a([B.an,A.U("Developer Settings",b,b,b,b,A.aa(b,b,n,b,b,b,b,b,b,b,b,14,b,b,B.r,b,b,!0,b,b,b,b,b,b,b,b),b,b,b)],l),B.m,B.k,B.o,b)
 e=A.ad(12)
 g=A.a([new A.bG(1,B.P,A.M(51,i,h,q),B.cA,12)],g)
-q=A.a([A.du(b,b,new A.aVc(c,a4),b,B.a5v,b,A.U(c.z,b,b,b,b,b,b,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Mn,n,b,b),"Bug report"),new A.aVd(a4),b,B.a6n,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.r_,n,b,b),a),new A.aVe(c,a4),b,B.a5Y,b,A.aP(B.bw,n,b,b))],l)
-if(a0.z==="DEV")B.b.L(q,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MP,n,b,b),"Upload image to backend"),new A.aVf(c,a4),b,B.a5G,b,A.aP(B.bw,n,b,b))],l))
-if(d===5)B.b.L(q,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Mu,n,b,b),"Sends the logs to discord."),new A.aVg(c,a4),b,B.a69,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.r_,n,b,b),a),new A.aVh(c,a4,a1),b,B.a5K,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.iX,n,b,b),"Create firebase and excel database."),new A.aVi(c,a4),b,B.a5z,b,A.aP(B.bw,n,b,b))],l))
+q=A.a([A.du(b,b,new A.aVc(c,a3),b,B.a5v,b,A.U(c.z,b,b,b,b,b,b,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Mn,n,b,b),"Bug report"),new A.aVd(a3),b,B.a6n,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.r_,n,b,b),"Add or Deduct points from a user"),new A.aVe(c,a3),b,B.a5Y,b,A.aP(B.bw,n,b,b))],l)
+if(a.z==="DEV")B.b.L(q,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.MP,n,b,b),"Upload image to backend"),new A.aVf(c,a3),b,B.a5G,b,A.aP(B.bw,n,b,b))],l))
+if(d===5)B.b.L(q,A.a([A.dR(r,b,b),A.du(b,A.mx(A.aP(B.Mu,n,b,b),"Sends the logs to discord."),new A.aVg(c,a3),b,B.a69,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.r_,n,b,b),"Sync data with database/excel"),new A.aVh(c,a3,a0),b,B.a5K,b,A.aP(B.bw,n,b,b)),A.dR(r,b,b),A.du(b,A.mx(A.aP(B.iX,n,b,b),"Create firebase and excel database."),new A.aVi(c,a3),b,B.a5z,b,A.aP(B.bw,n,b,b))],l))
 q=A.bl(b,A.b0(q,B.m,B.k,B.o,B.q),B.n,b,b,new A.bo(s,b,b,e,g,b,B.C),b,b,b,B.aj,b,b,b)
 i=A.cV(b,b,n,b,b,b,4,b,b,b,b,b,B.fP,b,new A.aU(A.ad(12),B.f),b,b,b,b)
-return A.eC(new A.ha(p,B.c0,b),a2.go,A.vQ(A.a([B.N,new A.as(B.iA,k,b),new A.as(B.bi,j,b),B.cU,new A.as(B.bi,f,b),B.aW,new A.as(B.bi,q,b),B.D7,new A.as(B.bi,A.bU(A.dr(!1,A.U("Sign Out",b,b,b,b,A.aa(b,b,m,b,b,b,b,b,b,b,b,18,b,b,b,b,b,!0,b,b,b,b,b,b,b,b),b,b,b),b,b,B.a3,b,b,b,b,new A.aVa(c,a4),b,i),b,1/0),b),B.N],l),b,b,!1),b,b,b)},
+return A.eC(new A.ha(p,B.c0,b),a1.go,A.vQ(A.a([B.N,new A.as(B.iA,k,b),new A.as(B.bi,j,b),B.cU,new A.as(B.bi,f,b),B.aW,new A.as(B.bi,q,b),B.D7,new A.as(B.bi,A.bU(A.dr(!1,A.U("Sign Out",b,b,b,b,A.aa(b,b,m,b,b,b,b,b,b,b,b,18,b,b,b,b,b,!0,b,b,b,b,b,b,b,b),b,b,b),b,b,B.a3,b,b,b,b,new A.aVa(c,a3),b,i),b,1/0),b),B.N],l),b,b,!1),b,b,b)},
 axi(a,b){var s=null,r={},q=$.al()
 r.a=!0
 r.b=null
