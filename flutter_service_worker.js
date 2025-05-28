@@ -37,7 +37,7 @@ const RESOURCES = {"firebase-messaging-sw.js": "ccd54d7c103493747f266f47f6eed9ed
 "canvaskit/chromium/canvaskit.js": "671c6b4f8fcc199dcc551c7bb125f239",
 "canvaskit/chromium/canvaskit.wasm": "b1ac05b29c127d86df4bcfbf50dd902a",
 "canvaskit/chromium/canvaskit.js.symbols": "a012ed99ccba193cf96bb2643003f6fc",
-"flutter_bootstrap.js": "a89431850099baa72927c8e7433f99f4",
+"flutter_bootstrap.js": "bba2f8c609f86c6bdf56eac4268ef262",
 "splash/img/light-3x.png": "8252990d7229d3965b2ab0ae85bc4f02",
 "splash/img/dark-4x.png": "fb2b5b3b568ea4a34b81b5b0e917313c",
 "splash/img/light-1x.png": "af5ab671d6f3d0df916fc34d9d7a8bef",
