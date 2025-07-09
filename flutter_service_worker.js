@@ -45,9 +45,9 @@ const RESOURCES = {"canvaskit/skwasm.wasm": "39dd80367a4e71582d234948adc521c0",
 "icons/Icon-72.png": "b01f313c0225573dc40498e4ec262d8b",
 "icons/Icon-192.png": "da3a393e1c3c8ace9202e53822af578d",
 "icons/Icon-maskable-512.png": "72f0ddf85c0feb650daf4a58422fd399",
-"flutter_bootstrap.js": "fcb260fc6a58a5db830f7feb706711c7",
+"flutter_bootstrap.js": "9ae161d040272df6b5325acb25b9c628",
 "firebase-messaging-sw.js": "ccd54d7c103493747f266f47f6eed9ed",
-"version.json": "7332dad180f07ad61dd52c3d5cd62e90",
+"version.json": "729fda6586bfc866386a56f0c21f4e6d",
 "service-worker.js": "7c2434e70de19d591241e61528951351"};
 // The application shell files that are downloaded before a service worker can
 // start.
